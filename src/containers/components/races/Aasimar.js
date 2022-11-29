@@ -5,7 +5,20 @@ import {Charisma,Wisdom,Constitution} from '../keywords/AbilityScores';
 import {Light} from '../keywords/Spells_L';
 import { Cantrip, LongRest, Speed } from '../keywords/Words';
 
-function AasimarRace() {
+import { connect } from "react-redux";
+import { updateSubRace } from "../../../redux/actionCreators";
+
+const mapStateToProps = state => {
+    return {
+      subrace: state.pc.subrace
+    };
+  };
+  
+  const mapDispatchToProps = dispatch => ({
+    updateCharSubRace: (newsubrace) => dispatch(updateSubRace(newsubrace))
+  });
+
+const AasimarRace = props => {
 
     const [buttons, setButtons] = useState([
         {class: "buttonsubrace", label: "Protector Aasimar", value: false },
@@ -37,8 +50,10 @@ function AasimarRace() {
                 {buttons.map((button,index) => (
                     <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
-                        onClick={() =>
-                            handleButtonsChange({ buttons, setButtons })(button.label)
+                        onClick={() => {
+                            handleButtonsChange({ buttons, setButtons })(button.label);
+                            props.updateCharSubRace(button.label);
+                            }
                         }
                     >
                         {button.label}
@@ -126,4 +141,4 @@ function AasimarRace() {
     )        
 }
 
-export default AasimarRace;
+export default connect(mapStateToProps,mapDispatchToProps)(AasimarRace);

@@ -1,4 +1,3 @@
-import MainNavigation from '../components/layout/MainNavigation';
 import DwarfRace from '../components/races/Dwarf';
 import ElfRace from '../components/races/Elf';
 import HalflingRace from '../components/races/Halfling';
@@ -15,7 +14,21 @@ import GoliathRace from '../components/races/Goliath';
 import TabaxiRace from '../components/races/Tabaxi';
 import {useState} from 'react';
 
-function RaceSelectPage() {
+import { connect } from "react-redux";
+import { updateRace,updateSubRace } from "../../redux/actionCreators";
+
+const mapStateToProps = state => {
+    return {
+      race: state.pc.race
+    };
+  };
+  
+const mapDispatchToProps = dispatch => ({
+    updateCharRace: (newrace) => dispatch(updateRace(newrace)),
+    updateCharSubRace: (newsubrace) => dispatch(updateSubRace(newsubrace))
+  });
+
+const RaceSelectPage = props => {
 
     const [buttons, setButtons] = useState([
         { class:"buttonrace", label: "Dwarf", value: false },
@@ -52,15 +65,18 @@ function RaceSelectPage() {
         });
         setButtons(newButtonsState)
     };
-       
+
     const Specialbuton = ({ buttons, setButtons, handleButtonsChange }) => {
         return (
             <>
                 {buttons.map((button,index) => (
                     <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
-                        onClick={() =>
-                            handleButtonsChange({ buttons, setButtons })(button.label)
+                        onClick={() => {
+                            handleButtonsChange({ buttons, setButtons })(button.label);
+                            props.updateCharRace(button.label);
+                            props.updateCharSubRace("");
+                            }
                         }
                     >
                         {button.label}
@@ -92,4 +108,4 @@ function RaceSelectPage() {
         </div>;
 }
 
-export default RaceSelectPage;
+export default connect(mapStateToProps,mapDispatchToProps)(RaceSelectPage);

@@ -1,0 +1,5 @@
+export const UPDATE_NAME = "UPDATE_NAME"
+export const UPDATE_RACE = "UPDATE_RACE"
+export const UPDATE_SUBRACE = "UPDATE_SUBRACE"
+export const UPDATE_CLASS = "UPDATE_CLASS"
+export const UPDATE_SUBCLASS = "UPDATE_SUBCLASS"

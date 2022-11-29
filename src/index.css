@@ -13,6 +13,24 @@ h2 {
   font-size: 150%;
 }
 
+h2_2 {
+  color: black;
+  font-size: 150%;
+  padding-bottom:10px;
+}
+
+summary_style {
+  color: black;
+  font-size: 80%;
+  float: right;
+  outline:solid;
+  outline-offset:10px; 
+
+}
+
+bold {
+  font-weight: bold;
+}
 
 .hspell {
   color: black;
@@ -243,4 +261,43 @@ td {
   padding: 8px;
   display: inline-block;
   transition-duration: 0.4s;
+}
+
+.buttonnav {
+  background-color: #ffffff;
+  text-align: center;
+  width: 13%;
+  font-size: 16px;
+  border-radius: 4px;
+  border-color: black;
+  padding: 10px;
+  transition-duration: 0.4s;
+
+}
+
+.buttonnav:hover {
+  background-color: #236aec;
+  color: white;
+  border-color: rgb(0, 0, 0);
+
+}
+
+.buttonnav_clicked {
+  background-color: #236aec;
+  color: white;
+  text-align: center;
+  width: 13%;
+
+  font-size: 16px;
+  border-radius: 4px;
+  border-color: rgb(0, 0, 0);
+  padding: 10px;
+  
+  transition-duration: 0.4s;
+}
+
+.buttoncontainer {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
 }
