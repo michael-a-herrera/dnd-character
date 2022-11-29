@@ -2,7 +2,7 @@ import React from 'react'
 import Picture from '../pics/aasimar.png'
 import {useState} from 'react';
 import {Charisma,Wisdom,Constitution} from '../keywords/AbilityScores';
-
+import {Light} from '../keywords/Spells';
 
 function AasimarRace() {
 
@@ -80,8 +80,8 @@ function AasimarRace() {
             </div> 
             rest.</p>
             <p><b>Light Bearer:</b>You know the 
-            <div class="tooltip">&nbsp;Light
-                <span class="tooltiptext">You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet.</span>
+            <div class="tooltip_spell">&nbsp;Light
+                <span class="tooltipspelltext"><Light/></span>
             </div> 
             <div class="tooltip">&nbsp;Cantrip
                 <span class="tooltiptext">A cantrip is a spell that can be cast at will, without using a spell slot and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip's spell level is 0.</span>

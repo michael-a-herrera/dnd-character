@@ -13,6 +13,37 @@ h2 {
   font-size: 150%;
 }
 
+
+.hspell {
+  color: black;
+  font-size: 150%;
+  text-align: left;
+  margin-left: 15px;
+  font-family:'Times';
+  margin-bottom: 3px;
+
+}
+.typespell {
+  color: black;
+  font-size: 75%;
+  font-style: italic;
+  text-align: left;
+  margin-left: 15px;
+  font-family:'Times';
+  margin-bottom: 3px;
+
+}
+.bspell {
+  color: black;
+  font-size: 100%;
+  text-align: left;
+  margin-left: 15px;
+  font-family:'Times';
+  margin-bottom: 3px;
+
+}
+
+
 body {
   color: black;
   font-family:'Helvetica';
@@ -58,6 +89,50 @@ body {
 }
 
 .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip_spell {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px line black;
+  font-weight: bold;
+  color: blue;
+}
+
+.tooltip_spell .tooltipspelltext {
+  visibility: hidden;
+  width: 400px;
+  background-color: rgb(255, 249, 201);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #555 #555 #555 #555;
+}
+
+.tooltip_spell .tooltipspelltext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip_spell:hover .tooltipspelltext {
   visibility: visible;
   opacity: 1;
 }

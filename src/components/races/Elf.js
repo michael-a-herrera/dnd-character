@@ -2,6 +2,7 @@ import React from 'react'
 import Picture from '../pics/elf.png'
 import {useState} from 'react';
 import {Charisma, Constitution, Dexterity, Intelligence, Wisdom} from '../keywords/AbilityScores';
+import {Light,Invisibility,Sleep,FaerieFire,DancingLights,Darkness} from '../keywords/Spells';
 
 function ElfRace() {
 
@@ -150,19 +151,19 @@ function ElfRace() {
                 </div> 
                 with rapiers, shortswords, and hand crossbows.</p>
                 <p><b>Drow Magic:</b> You know the 
-                <div class="tooltip">&nbsp;dancing lights
-                    <span class="tooltiptext">You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.</span>
+                <div class="tooltip_spell">&nbsp;dancing lights
+                    <span class="tooltipspelltext"><DancingLights/></span>
                 </div> 
                 <div class="tooltip">&nbsp;cantrip
                     <span class="tooltiptext">A cantrip is a spell that can be cast at will, without using a spell slot and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip's spell level is 0.</span>
                 </div> 
                 . When you reach 3rd level, you can cast the 
-                <div class="tooltip">&nbsp;faerie fire&nbsp;
-                    <span class="tooltiptext">Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius. Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.</span>
+                <div class="tooltip_spell">&nbsp;faerie fire&nbsp;
+                    <span class="tooltipspelltext"><FaerieFire/></span>
                 </div> 
                 spell once with this trait. When you reach 5th level, you can cast the 
-                <div class="tooltip">&nbsp;darkness&nbsp;
-                    <span class="tooltiptext">Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.</span>
+                <div class="tooltip_spell">&nbsp;darkness&nbsp;
+                    <span class="tooltipspelltext"><Darkness/></span>
                 </div> 
                 spell once with this trait. You regain the ability to cast these spells (cantrips can be used as many times as you want) when you finish a  
                 <div class="tooltip">&nbsp;long&nbsp;
@@ -188,19 +189,19 @@ function ElfRace() {
                 </div>           
                 on Investigation and Insight checks. </p>
                 <p><b>Blessing of the Moon Weaver:</b> You know the  
-                <div class="tooltip">&nbsp;light
-                    <span class="tooltiptext">You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet.</span>
+                <div class="tooltip_spell">&nbsp;light
+                    <span class="tooltipspelltext"><Light/></span>
                 </div> 
                 <div class="tooltip">&nbsp;cantrip
                     <span class="tooltiptext">A cantrip is a spell that can be cast at will, without using a spell slot and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip's spell level is 0.</span>
                 </div> 
                 . When you reach 3rd level, you can cast the 
-                <div class="tooltip">&nbsp;sleep&nbsp;
-                    <span class="tooltiptext">This spell sends creatures into a magical slumber. A dice roll determines if one or more creatures fall asleep.</span>
+                <div class="tooltip_spell">&nbsp;sleep&nbsp;
+                    <span class="tooltipspelltext"><Sleep/></span>
                 </div> 
                 spell once with this trait. When you reach 5th level, you can cast the 
-                <div class="tooltip">&nbsp;invisibility&nbsp;
-                    <span class="tooltiptext">A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</span>
+                <div class="tooltip_spell">&nbsp;invisibility&nbsp;
+                    <span class="tooltipspelltext"><Invisibility/></span>
                 </div> 
                 spell once with this trait. You regain the ability to cast these spells (cantrips can be used as many times as you want) when you finish a  
                 <div class="tooltip">&nbsp;long&nbsp;
