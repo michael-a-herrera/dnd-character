@@ -8,8 +8,20 @@ import {Sleep} from '../keywords/Spells_S';
 import {FaerieFire} from '../keywords/Spells_F';
 import {DancingLights,Darkness} from '../keywords/Spells_D';
 import { Advantage, Cantrip, LongRest, MaterialComponents, Proficiency, Speed } from '../keywords/Words';
+import { connect } from "react-redux";
+import { updateSubRace } from "../../../redux/actionCreators";
 
-function ElfRace() {
+const mapStateToProps = state => {
+    return {
+      subrace: state.pc.subrace
+    };
+  };
+  
+  const mapDispatchToProps = dispatch => ({
+    updateCharSubRace: (newsubrace) => dispatch(updateSubRace(newsubrace))
+  });
+
+const ElfRace = props => {
 
     const [buttons, setButtons] = useState([
         {class: "buttonsubrace", label: "High Elf", value: false },
@@ -46,8 +58,10 @@ function ElfRace() {
                 {buttons.map((button,index) => (
                     <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
-                        onClick={() =>
-                            handleButtonsChange({ buttons, setButtons })(button.label)
+                        onClick={() => {
+                            handleButtonsChange({ buttons, setButtons })(button.label);
+                            props.updateCharSubRace(button.label);
+                            }
                         }
                     >
                         {button.label}
@@ -243,5 +257,4 @@ function ElfRace() {
         </div>
     )        
 }
-
-export default ElfRace;
+export default connect(mapStateToProps,mapDispatchToProps)(ElfRace);

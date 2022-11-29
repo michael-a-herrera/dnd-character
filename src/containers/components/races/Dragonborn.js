@@ -3,6 +3,19 @@ import Picture from '../pics/dragonborn.png'
 import {useState} from 'react';
 import {Charisma,Constitution, Intelligence, Strength} from '../keywords/AbilityScores';
 import { Advantage, ConstitutionModifier, DifficultyClass, LongRest, Proficiency, Reaction, ShortRest, Speed, TwoD6 } from '../keywords/Words';
+import { connect } from "react-redux";
+import { updateSubRace } from "../../../redux/actionCreators";
+
+const mapStateToProps = state => {
+    return {
+      subrace: state.pc.subrace
+    };
+  };
+  
+  const mapDispatchToProps = dispatch => ({
+    updateCharSubRace: (newsubrace) => dispatch(updateSubRace(newsubrace))
+  });
+
 
 const data = [
     { dragon: "Black", damage: "Acid", weapon: "5 by 30 ft. line (Dex save)" },
@@ -18,7 +31,7 @@ const data = [
 
   ]
 
-function DragonbornRace() {
+const DragonbornRace = props => {
 
     const [buttons, setButtons] = useState([
         { class:"buttonsubrace", label: "Draconblood", value: false },
@@ -50,8 +63,10 @@ function DragonbornRace() {
                 {buttons.map((button,index) => (
                     <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
-                        onClick={() =>
-                            handleButtonsChange({ buttons, setButtons })(button.label)
+                        onClick={() => {
+                            handleButtonsChange({ buttons, setButtons })(button.label);
+                            props.updateCharSubRace(button.label);
+                            }
                         }
                     >
                         {button.label}
@@ -184,4 +199,5 @@ function DragonbornRace() {
     )        
 }
 
-export default DragonbornRace;
+export default connect(mapStateToProps,mapDispatchToProps)(DragonbornRace);
+

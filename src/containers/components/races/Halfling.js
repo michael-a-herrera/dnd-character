@@ -6,8 +6,20 @@ import { Advantage, Cantrip, D20, LongRest, Speed } from '../keywords/Words';
 import { Druidcraft } from '../keywords/Spells_D';
 import { Entangle } from '../keywords/Spells_E';
 import { SpikeGrowth } from '../keywords/Spells_S';
+import { connect } from "react-redux";
+import { updateSubRace } from "../../../redux/actionCreators";
 
-function HalflingRace() {
+const mapStateToProps = state => {
+    return {
+      subrace: state.pc.subrace
+    };
+  };
+  
+  const mapDispatchToProps = dispatch => ({
+    updateCharSubRace: (newsubrace) => dispatch(updateSubRace(newsubrace))
+  });
+
+const HalflingRace = props => {
 
     const [buttons, setButtons] = useState([
         {class: "buttonsubrace", label: "Lightfoot", value: false },
@@ -39,8 +51,10 @@ function HalflingRace() {
                 {buttons.map((button,index) => (
                     <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
-                        onClick={() =>
-                            handleButtonsChange({ buttons, setButtons })(button.label)
+                        onClick={() => {
+                            handleButtonsChange({ buttons, setButtons })(button.label);
+                            props.updateCharSubRace(button.label);
+                            }
                         }
                     >
                         {button.label}
@@ -149,5 +163,4 @@ function HalflingRace() {
         </div>
     )        
 }
-
-export default HalflingRace;
+export default connect(mapStateToProps,mapDispatchToProps)(HalflingRace);

@@ -3,8 +3,20 @@ import {useState} from 'react';
 import Picture from '../pics/dwarf.png'
 import {Constitution, Strength, Wisdom} from '../keywords/AbilityScores';
 import { Advantage, Proficiency, Speed } from '../keywords/Words';
+import { connect } from "react-redux";
+import { updateSubRace } from "../../../redux/actionCreators";
 
-function DwarfRace() {
+const mapStateToProps = state => {
+    return {
+      subrace: state.pc.subrace
+    };
+  };
+  
+  const mapDispatchToProps = dispatch => ({
+    updateCharSubRace: (newsubrace) => dispatch(updateSubRace(newsubrace))
+  });
+
+const DwarfRace = props => {
     
     const [buttons, setButtons] = useState([
         { class:"buttonsubrace", label: "Hill Dwarf", value: false },
@@ -36,8 +48,10 @@ function DwarfRace() {
                 {buttons.map((button,index) => (
                     <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
-                        onClick={() =>
-                            handleButtonsChange({ buttons, setButtons })(button.label)
+                        onClick={() => {
+                            handleButtonsChange({ buttons, setButtons })(button.label);
+                            props.updateCharSubRace(button.label);
+                            }
                         }
                     >
                         {button.label}
@@ -119,5 +133,4 @@ function DwarfRace() {
         </div>
     )        
 }
-
-export default DwarfRace;
+export default connect(mapStateToProps,mapDispatchToProps)(DwarfRace);

@@ -8,8 +8,20 @@ import { PassWithoutTrace, ProduceFlame } from '../keywords/Spells_P';
 import { BurningHands } from '../keywords/Spells_B';
 import { CreateOrDestroyWater } from '../keywords/Spells_C';
 import { ShapeWater } from '../keywords/Spells_S';
+import { connect } from "react-redux";
+import { updateSubRace } from "../../../redux/actionCreators";
 
-function GenasiRace() {
+const mapStateToProps = state => {
+    return {
+      subrace: state.pc.subrace
+    };
+  };
+  
+  const mapDispatchToProps = dispatch => ({
+    updateCharSubRace: (newsubrace) => dispatch(updateSubRace(newsubrace))
+  });
+
+const GenasiRace = props => {
 
     const [buttons, setButtons] = useState([
         { class:"buttonsubrace", label: "Air Genasi", value: false },
@@ -42,8 +54,10 @@ function GenasiRace() {
                 {buttons.map((button,index) => (
                     <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
-                        onClick={() =>
-                            handleButtonsChange({ buttons, setButtons })(button.label)
+                        onClick={() => {
+                            handleButtonsChange({ buttons, setButtons })(button.label);
+                            props.updateCharSubRace(button.label);
+                            }
                         }
                     >
                         {button.label}
@@ -201,5 +215,4 @@ function GenasiRace() {
         </div>
     )        
 }
-
-export default GenasiRace;
+export default connect(mapStateToProps,mapDispatchToProps)(GenasiRace);

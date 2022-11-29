@@ -4,8 +4,20 @@ import {useState} from 'react';
 import {Charisma, Constitution, Dexterity, Intelligence, Wisdom} from '../keywords/AbilityScores';
 import { Advantage, Cantrip, Proficiency, Speed } from '../keywords/Words';
 import { MinorIllusion } from '../keywords/Spells_M';
+import { connect } from "react-redux";
+import { updateSubRace } from "../../../redux/actionCreators";
 
-function GnomeRace() {
+const mapStateToProps = state => {
+    return {
+      subrace: state.pc.subrace
+    };
+  };
+  
+  const mapDispatchToProps = dispatch => ({
+    updateCharSubRace: (newsubrace) => dispatch(updateSubRace(newsubrace))
+  });
+
+const GnomeRace = props => {
 
     const [buttons, setButtons] = useState([
         { class:"buttonsubrace", label: "Forest Gnome", value: false },
@@ -37,8 +49,10 @@ function GnomeRace() {
                 {buttons.map((button,index) => (
                     <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
-                        onClick={() =>
-                            handleButtonsChange({ buttons, setButtons })(button.label)
+                        onClick={() => {
+                            handleButtonsChange({ buttons, setButtons })(button.label);
+                            props.updateCharSubRace(button.label);
+                            }
                         }
                     >
                         {button.label}
@@ -138,5 +152,4 @@ function GnomeRace() {
         </div>
     )        
 }
-
-export default GnomeRace;
+export default connect(mapStateToProps,mapDispatchToProps)(GnomeRace);
