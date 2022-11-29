@@ -2,7 +2,7 @@ import React from 'react'
 import Picture from '../pics/aasimar.png'
 import {useState} from 'react';
 import {Charisma,Wisdom,Constitution} from '../keywords/AbilityScores';
-import {Light} from '../keywords/Spells';
+import {Light} from '../keywords/Spells_L';
 
 function AasimarRace() {
 

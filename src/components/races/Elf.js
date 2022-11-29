@@ -2,7 +2,11 @@ import React from 'react'
 import Picture from '../pics/elf.png'
 import {useState} from 'react';
 import {Charisma, Constitution, Dexterity, Intelligence, Wisdom} from '../keywords/AbilityScores';
-import {Light,Invisibility,Sleep,FaerieFire,DancingLights,Darkness} from '../keywords/Spells';
+import {Light} from '../keywords/Spells_L';
+import {Invisibility} from '../keywords/Spells_I';
+import {Sleep} from '../keywords/Spells_S';
+import {FaerieFire} from '../keywords/Spells_F';
+import {DancingLights,Darkness} from '../keywords/Spells_D';
 
 function ElfRace() {
 
