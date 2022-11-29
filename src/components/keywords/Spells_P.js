@@ -41,7 +41,375 @@ function DisplaySpell(input_spell) {
 }
 
 
-function placeholderp() {
+function PassWithoutTrace() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Passwall() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function PhantasmalKiller() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function PhantomSteed() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function PlanarAlly() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function PlanarBinding() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function PlaneShift() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function PlantGrowth() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function PoisonSpray() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Polymorph() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function PowerWordKill() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function PowerWordStun() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function PrayerOfHealing() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Prestidigiation() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function PrismaticSpray() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function PrismaticWall() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function PrivateSanctum() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function ProduceFlame() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function ProgrammedIllusion() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function ProjectImage() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function ProtectionFromEnergy() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function ProtectionFromEvilAndGood() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function ProtectionFromPoison() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function PurifyFoodAndDrink() {
     const spell = {
         name: " ", 
         type: " ",
@@ -59,5 +427,30 @@ function placeholderp() {
 }
 
 
-export {placeholderp};
+export {
+    PassWithoutTrace,
+    Passwall,
+    PhantasmalKiller,
+    PhantomSteed,
+    PlanarAlly,
+    PlanarBinding,
+    PlaneShift,
+    PlantGrowth,
+    PoisonSpray,
+    Polymorph,
+    PowerWordKill,
+    PowerWordStun,
+    PrayerOfHealing,
+    Prestidigiation,
+    PrismaticSpray,
+    PrismaticWall,
+    PrivateSanctum,
+    ProduceFlame,
+    ProgrammedIllusion,
+    ProjectImage,
+    ProtectionFromEnergy,
+    ProtectionFromEvilAndGood,
+    ProtectionFromPoison,
+    PurifyFoodAndDrink
+};
 

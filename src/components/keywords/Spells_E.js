@@ -39,9 +39,135 @@ function DisplaySpell(input_spell) {
         </div> 
     )
 }
-
-
-function placeholdere() {
+function Earthquake() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function EldritchBlast() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function EnhanceAbility() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function EnlargeReduce() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Entangle() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Enthrall() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Etherealness() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function ExpeditiousRetreat() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Eyebite() {
     const spell = {
         name: " ", 
         type: " ",
@@ -59,5 +185,16 @@ function placeholdere() {
 }
 
 
-export {placeholdere};
+
+export {
+    Earthquake,
+    EldritchBlast,
+    EnhanceAbility,
+    EnlargeReduce,
+    Entangle,
+    Enthrall,
+    Etherealness,
+    ExpeditiousRetreat,
+    Eyebite
+};
 

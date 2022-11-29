@@ -41,7 +41,7 @@ function DisplaySpell(input_spell) {
 }
 
 
-function placeholderq() {
+function nospellshereq() {
     const spell = {
         name: " ", 
         type: " ",
@@ -59,5 +59,5 @@ function placeholderq() {
 }
 
 
-export {placeholderq};
+export {nospellshereq};
 

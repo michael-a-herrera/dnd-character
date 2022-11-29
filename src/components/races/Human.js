@@ -1,4 +1,5 @@
 import React from 'react'
+import { Speed } from '../keywords/Words';
 import Picture from '../pics/human.png'
 
 function HumanRace() {
@@ -14,16 +15,13 @@ function HumanRace() {
             <p><b>Size:</b> Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium.</p>
             <p><b>Speed:</b> Your base walking speed is 
             <div class="tooltip">&nbsp;30 feet.
-                <span class="tooltiptext">This is how far you can move in a single round of combat without using a dash action.</span>
+                <span class="tooltiptext"><Speed/></span>
             </div>
             </p>
             <p><b>Languages:</b>You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on.</p>
         
         </div>
     )        
-
-
 }
-
 
 export default HumanRace;

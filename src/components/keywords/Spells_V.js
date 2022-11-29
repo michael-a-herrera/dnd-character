@@ -41,7 +41,23 @@ function DisplaySpell(input_spell) {
 }
 
 
-function placeholderv() {
+function VampiricTouch() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function ViciousMockery() {
     const spell = {
         name: " ", 
         type: " ",
@@ -58,6 +74,8 @@ function placeholderv() {
     return (DisplaySpell(spell))        
 }
 
-
-export {placeholderv};
+export {
+    VampiricTouch,
+    ViciousMockery
+};
 

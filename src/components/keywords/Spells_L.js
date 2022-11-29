@@ -39,7 +39,54 @@ function DisplaySpell(input_spell) {
         </div> 
     )
 }
-
+function LegendLore() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function LesserRestoration() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Levitate() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
 function Light() {
     const spell = {
         name: " Light", 
@@ -55,8 +102,98 @@ function Light() {
     }
     return (DisplaySpell(spell))        
 }
+function LightningBolt() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function LocateAnimalOrPlants() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function LocateCreature() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function LocateObject() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Longstrider() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
 
 
 
-export {Light};
+export {
+    LegendLore,
+    LesserRestoration,
+    Levitate,
+    LightningBolt,
+    LocateAnimalOrPlants,
+    LocateCreature,
+    LocateObject,
+    Longstrider,
+    Light
+};
 

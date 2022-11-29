@@ -1,6 +1,7 @@
 import React from 'react'
 import Picture from '../pics/halfelf.png'
 import {Charisma} from '../keywords/AbilityScores';
+import { Advantage, Proficiency, Speed } from '../keywords/Words';
 
 function HalfElfRace() {
     return (
@@ -19,27 +20,24 @@ function HalfElfRace() {
             <p><b>Size:</b> Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium.</p>
             <p><b>Speed:</b> Your base walking speed is 
             <div class="tooltip">&nbsp;30 feet.
-                <span class="tooltiptext">This is how far you can move in a single round of combat without using a dash action.</span>
+                <span class="tooltiptext"><Speed/></span>
             </div>
             </p>
             <p><b>Darkvision:</b> Thanks to your elf blood, you have superior vision in the dark and dim conditions.  You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.  You can't discern color in darkness, only shades of gray.</p>
             <p><b>Fey Ancestry:</b> You have 
             <div class="tooltip">&nbsp;advantage&nbsp;
-                <span class="tooltiptext">Advantage means you can make a roll twice and take the higher of the two rolls, increasing your chance for success or a critical roll.</span>
+                <span class="tooltiptext"><Advantage/></span>
             </div>            
             on saving throws against being charmed, and magic can't put you to sleep.</p>
             <p><b>Skill Versatility:</b> You gain 
             <div class="tooltip">&nbsp;proficiency&nbsp;
-                <span class="tooltiptext">A bonus that you can add to a roll to increase your chance of success, due to your "proficiency" in the skill.</span>
+                <span class="tooltiptext"><Proficiency/></span>
             </div>  
             in two skills of your choice. </p>
             <p><b>Languages:</b>You can speak, read, and write Common, Elvish, and one extra language of your choice.</p>
         
         </div>
     )        
-
-
 }
-
 
 export default HalfElfRace;

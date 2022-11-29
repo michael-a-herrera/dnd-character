@@ -3,6 +3,7 @@ import Picture from '../pics/aasimar.png'
 import {useState} from 'react';
 import {Charisma,Wisdom,Constitution} from '../keywords/AbilityScores';
 import {Light} from '../keywords/Spells_L';
+import { Cantrip, LongRest, Speed } from '../keywords/Words';
 
 function AasimarRace() {
 
@@ -69,22 +70,22 @@ function AasimarRace() {
             <p><b>Size:</b> Aasimar have the same range of height and weight as humans. Your size is medium.</p>
             <p><b>Speed:</b> Your base walking speed is 
             <div class="tooltip">&nbsp;30 feet.
-                <span class="tooltiptext">This is how far you can move in a single round of combat without using a dash action.</span>
+                <span class="tooltiptext"><Speed/></span>
             </div>
             </p>
             <p><b>Darkvision:</b> Blessed with a radiant soul, you have superior vision in the dark and dim conditions.  You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.  You can't discern color in darkness, only shades of gray.</p>
             <p><b>Celestial Resistance:</b> You have resistance to necrotic damage and radiant damage. </p>
             <p><b>Healing Hands:</b> You can touch a creature and cause it regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a 
             <div class="tooltip">&nbsp;long&nbsp;
-                <span class="tooltiptext">A long rest is 8 hours of sleep. You regain all health and spells.</span>
+                <span class="tooltiptext"><LongRest/></span>
             </div> 
             rest.</p>
             <p><b>Light Bearer:</b>You know the 
-            <div class="tooltip_spell">&nbsp;Light
+            <div class="tooltip_spell">&nbsp;light
                 <span class="tooltipspelltext"><Light/></span>
             </div> 
-            <div class="tooltip">&nbsp;Cantrip
-                <span class="tooltiptext">A cantrip is a spell that can be cast at will, without using a spell slot and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip's spell level is 0.</span>
+            <div class="tooltip">&nbsp;cantrip
+                <span class="tooltiptext"><Cantrip/></span>
             </div> 
             .
             <div class="tooltip">&nbsp;Charisma&nbsp;
@@ -103,7 +104,7 @@ function AasimarRace() {
                 score increases by 1. </p>
                 <p><b>Radiant Soul:</b> Starting at 3rd level, you can use you action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back. Your transformation lasts for 1 minute or until you end it as a bonus action. You have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damange equal to your level. Once you use this trait, you can't use it again until you finish a 
                 <div class="tooltip">&nbsp;long&nbsp;
-                    <span class="tooltiptext">A long rest is 8 hours of sleep. You regain all health and spells.</span>
+                    <span class="tooltiptext"><LongRest/></span>
                 </div> 
                 rest. </p>
             </div>}
@@ -117,13 +118,12 @@ function AasimarRace() {
                 score increases by 1. </p>
                 <p><b>Radiant Consumption:</b> Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing a searing light to radiate from you, pouring out of your eyes and mouth, and threaten to char you. Your transformation lasts for 1 minute or until you end it as a bonus action. You shed bright light in a 10 foot radius and dim liight for an additional 10 feet, and at the end of each of your turns, you and each creature within 10 feet of you take radiant damage equal to half your level (rounded up). In addition, once on each of your turns, you can deal extra radiante damge equal to your level. Once you use this trait, you can't use it again until you finish a 
                 <div class="tooltip">&nbsp;long&nbsp;
-                    <span class="tooltiptext">A long rest is 8 hours of sleep. You regain all health and spells.</span>
+                    <span class="tooltiptext"><LongRest/></span>
                 </div> 
                 rest. </p>
             </div>}
          </div>
     )        
 }
-
 
 export default AasimarRace;

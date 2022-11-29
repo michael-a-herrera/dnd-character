@@ -41,7 +41,7 @@ function DisplaySpell(input_spell) {
 }
 
 
-function placeholderu() {
+function UnseenServant() {
     const spell = {
         name: " ", 
         type: " ",
@@ -59,5 +59,5 @@ function placeholderu() {
 }
 
 
-export {placeholderu};
+export {UnseenServant};
 

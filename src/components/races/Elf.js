@@ -7,6 +7,7 @@ import {Invisibility} from '../keywords/Spells_I';
 import {Sleep} from '../keywords/Spells_S';
 import {FaerieFire} from '../keywords/Spells_F';
 import {DancingLights,Darkness} from '../keywords/Spells_D';
+import { Advantage, Cantrip, LongRest, MaterialComponents, Proficiency, Speed } from '../keywords/Words';
 
 function ElfRace() {
 
@@ -84,18 +85,18 @@ function ElfRace() {
             <p><b>Size:</b> Elves range from under 5 to over 6 feet tall and have slender builds.  Your size is medium.</p>
             <p><b>Speed:</b> Your base walking speed is 
             <div class="tooltip">&nbsp;30 feet.
-                <span class="tooltiptext">This is how far you can move in a single round of combat without using a dash action.</span>
+                <span class="tooltiptext"><Speed/></span>
             </div>
             </p>
             <p><b>Darkvision:</b> Accustomed to twilit forests and the night sky, you have superior vision in the dark and dim conditions.  You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.  You can't discern color in darkness, only shades of gray.</p>
             <p><b>Keen Senses:</b> You have 
             <div class="tooltip">&nbsp;proficiency&nbsp;
-                <span class="tooltiptext">A bonus that you can add to a roll to increase your chance of success, due to your "proficiency" in the skill.</span>
+                <span class="tooltiptext"><Proficiency/></span>
             </div>  
             in the Perception skill.</p>
             <p><b>Fey Ancestry:</b> You have 
             <div class="tooltip">&nbsp;advantage&nbsp;
-                <span class="tooltiptext">Advantage means you can make a roll twice and take the higher of the two rolls, increasing your chance for success or a critical roll.</span>
+                <span class="tooltiptext"><Advantage/></span>
             </div>            
             on saving throws against being charmed, and magic can't put you to sleep.</p>
             <p><b>Trance:</b>Elves don't need to sleep. Instead they meditate deeply, remaining semiconscious, for 4 hours a day gaining the same benefit that a human does after 8 hours of sleep.</p>
@@ -110,12 +111,12 @@ function ElfRace() {
                 score increases by 1.</p>
                 <p><b>Elf Weapon Training:</b> You have 
                 <div class="tooltip">&nbsp;proficiency&nbsp;
-                    <span class="tooltiptext">A bonus that you can add to a roll to increase your chance of success, due to your "proficiency" in the skill.</span>
+                    <span class="tooltiptext"><Proficiency/></span>
                 </div> 
                 with the longsword, shortsword, shortbow, and longbow.</p>
                 <p><b>Cantrip:</b> You know one 
                 <div class="tooltip">&nbsp;cantrip&nbsp;
-                    <span class="tooltiptext">A cantrip is a spell that can be cast at will, without using a spell slot and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip's spell level is 0.</span>
+                    <span class="tooltiptext"><Cantrip/></span>
                 </div> 
                 of your choice from the wizard spell list. 
                 <div class="tooltip">&nbsp;Intelligence&nbsp;
@@ -134,7 +135,7 @@ function ElfRace() {
                 score increases by 1.</p>
                 <p><b>Elf Weapon Training:</b> You have 
                 <div class="tooltip">&nbsp;proficiency&nbsp;
-                    <span class="tooltiptext">A bonus that you can add to a roll to increase your chance of success, due to your "proficiency" in the skill.</span>
+                    <span class="tooltiptext"><Proficiency/></span>
                 </div> 
                 with the longsword, shortsword, shortbow, and longbow.</p>
                 <p><b>Fleet of Foot:</b> Your base walking speed increases to 35 feet.</p>
@@ -151,7 +152,7 @@ function ElfRace() {
                 <p><b>Superior Darkvision:</b> Your darkvision has a radius of 120 feet. </p>
                 <p><b>Drow Weapon Training:</b> You have 
                 <div class="tooltip">&nbsp;proficiency&nbsp;
-                    <span class="tooltiptext">A bonus that you can add to a roll to increase your chance of success, due to your "proficiency" in the skill.</span>
+                    <span class="tooltiptext"><Proficiency/></span>
                 </div> 
                 with rapiers, shortswords, and hand crossbows.</p>
                 <p><b>Drow Magic:</b> You know the 
@@ -159,7 +160,7 @@ function ElfRace() {
                     <span class="tooltipspelltext"><DancingLights/></span>
                 </div> 
                 <div class="tooltip">&nbsp;cantrip
-                    <span class="tooltiptext">A cantrip is a spell that can be cast at will, without using a spell slot and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip's spell level is 0.</span>
+                    <span class="tooltiptext"><Cantrip/></span>
                 </div> 
                 . When you reach 3rd level, you can cast the 
                 <div class="tooltip_spell">&nbsp;faerie fire&nbsp;
@@ -171,7 +172,7 @@ function ElfRace() {
                 </div> 
                 spell once with this trait. You regain the ability to cast these spells (cantrips can be used as many times as you want) when you finish a  
                 <div class="tooltip">&nbsp;long&nbsp;
-                    <span class="tooltiptext">A long rest is 8 hours of sleep. You regain all health and spells.</span>
+                    <span class="tooltiptext"><LongRest/></span>
                 </div> 
                 rest. 
                 <div class="tooltip">&nbsp;Charisma&nbsp;
@@ -189,7 +190,7 @@ function ElfRace() {
                 score increases by 1.</p>
                 <p><b>Incisive Sense:</b> You have 
                 <div class="tooltip">&nbsp;advantage&nbsp;
-                    <span class="tooltiptext">Advantage means you can make a roll twice and take the higher of the two rolls, increasing your chance for success or a critical roll.</span>
+                    <span class="tooltiptext"><Advantage/></span>
                 </div>           
                 on Investigation and Insight checks. </p>
                 <p><b>Blessing of the Moon Weaver:</b> You know the  
@@ -197,7 +198,7 @@ function ElfRace() {
                     <span class="tooltipspelltext"><Light/></span>
                 </div> 
                 <div class="tooltip">&nbsp;cantrip
-                    <span class="tooltiptext">A cantrip is a spell that can be cast at will, without using a spell slot and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip's spell level is 0.</span>
+                    <span class="tooltiptext"><Cantrip/></span>
                 </div> 
                 . When you reach 3rd level, you can cast the 
                 <div class="tooltip_spell">&nbsp;sleep&nbsp;
@@ -209,11 +210,11 @@ function ElfRace() {
                 </div> 
                 spell once with this trait. You regain the ability to cast these spells (cantrips can be used as many times as you want) when you finish a  
                 <div class="tooltip">&nbsp;long&nbsp;
-                    <span class="tooltiptext">A long rest is 8 hours of sleep. You regain all health and spells.</span>
+                    <span class="tooltiptext"><LongRest/></span>
                 </div> 
                 rest. Casting these spells with this trait doesn't require 
                 <div class="tooltip">&nbsp;material components
-                    <span class="tooltiptext">Some spells require material components to cast. Some components are cheap and widely available, while others, usually used in powerful spells, can cost thousands of gold or require hard to obtain materials.</span>
+                    <span class="tooltiptext"><MaterialComponents/></span>
                 </div> 
                 . 
                 <div class="tooltip">&nbsp;Wisdom&nbsp;
@@ -231,7 +232,7 @@ function ElfRace() {
                 score increases by 1.</p>
                 <p><b> Sea Elf Training:</b> You have 
                 <div class="tooltip">&nbsp;proficiency&nbsp;
-                    <span class="tooltiptext">A bonus that you can add to a roll to increase your chance of success, due to your "proficiency" in the skill.</span>
+                    <span class="tooltiptext"><Proficiency/></span>
                 </div> 
                 with the spear, trident, light crossbow, and net. </p>
                 <p><b>Child of the Sea:</b> You have a swimming speed of 30 feet, and you can breathe air and water. </p> 
@@ -241,9 +242,6 @@ function ElfRace() {
             
         </div>
     )        
-
-
 }
-
 
 export default ElfRace;

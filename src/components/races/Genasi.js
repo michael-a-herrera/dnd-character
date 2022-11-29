@@ -2,6 +2,12 @@ import React from 'react'
 import Picture from '../pics/genasi.png'
 import {useState} from 'react';
 import {Constitution, Dexterity, Intelligence, Strength, Wisdom} from '../keywords/AbilityScores';
+import { Cantrip, LongRest, MaterialComponents, Speed } from '../keywords/Words';
+import { Levitate } from '../keywords/Spells_L';
+import { PassWithoutTrace, ProduceFlame } from '../keywords/Spells_P';
+import { BurningHands } from '../keywords/Spells_B';
+import { CreateOrDestroyWater } from '../keywords/Spells_C';
+import { ShapeWater } from '../keywords/Spells_S';
 
 function GenasiRace() {
 
@@ -71,7 +77,7 @@ function GenasiRace() {
             <p><b>Size:</b> Genasi are as varied as their mortal parents but are generally built like humans. Your size is Medium.</p>
             <p><b>Speed:</b> Your base walking speed is 
             <div class="tooltip">&nbsp;30 feet.
-                <span class="tooltiptext">This is how far you can move in a single round of combat without using a dash action.</span>
+                <span class="tooltiptext"><Speed/></span>
             </div>
             </p>
             
@@ -86,16 +92,16 @@ function GenasiRace() {
                 score increases by 1.</p>
                 <p><b>Unending Breath:</b> You can hold your breath indefinitely while you're not incapacitated.</p>
                 <p><b>Mingle with the Wind:</b> You can cast the 
-                <div class="tooltip">&nbsp;levitate&nbsp;
-                    <span class="tooltiptext">One creature or loose object of your choice that you can see within range rises vertically, up to 20 feet, and remains suspended there for the duration. The spell can levitate a target that weighs up to 500 pounds. An unwilling creature that succeeds on a Constitution saving throw is unaffected.</span>
+                <div class="tooltip_spell">&nbsp;levitate&nbsp;
+                    <span class="tooltipspelltext"><Levitate/></span>
                 </div>
                 spell once with this trait, requiring no 
                 <div class="tooltip">&nbsp;material components
-                    <span class="tooltiptext">Some spells require material components to cast. Some components are cheap and widely available, while others, usually used in powerful spells, can cost thousands of gold or require hard to obtain materials.</span>
+                    <span class="tooltiptext"><MaterialComponents/></span>
                 </div> 
                 , and you regain the ability to cast it this way when you finish a 
                 <div class="tooltip">&nbsp;long&nbsp;
-                    <span class="tooltiptext">A long rest is 8 hours of sleep. You regain all health and spells.</span>
+                    <span class="tooltiptext"><LongRest/></span>
                 </div> 
                 rest.
                 <div class="tooltip">&nbsp;Constitution&nbsp;
@@ -113,16 +119,16 @@ function GenasiRace() {
                 score increases by 1.</p>
                 <p><b>Earth Walk:</b> You can move across difficult terrain made of earth and stone without expending extra movement. </p>
                 <p><b>Path without Trace:</b>You can cast the
-                <div class="tooltip">&nbsp;pass without trace&nbsp;
-                    <span class="tooltiptext">A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Stealth checks and can't be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.</span>
+                <div class="tooltip_spell">&nbsp;pass without trace&nbsp;
+                    <span class="tooltipspelltext"><PassWithoutTrace/></span>
                 </div>
                 spell once with this trait, requiring no 
                 <div class="tooltip">&nbsp;material components
-                    <span class="tooltiptext">Some spells require material components to cast. Some components are cheap and widely available, while others, usually used in powerful spells, can cost thousands of gold or require hard to obtain materials.</span>
+                    <span class="tooltiptext"><MaterialComponents/></span>
                 </div> 
                 , and you regain the ability to cast it this way when you finish a 
                 <div class="tooltip">&nbsp;long&nbsp;
-                    <span class="tooltiptext">A long rest is 8 hours of sleep. You regain all health and spells.</span>
+                    <span class="tooltiptext"><LongRest/></span>
                 </div> 
                 rest.
                 <div class="tooltip">&nbsp;Constitution&nbsp;
@@ -140,19 +146,19 @@ function GenasiRace() {
                 <p><b>Darkvision:</b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.  Your ties to the Elemental Plane of Fire make your darkvision unusual: everything you see in darkness is a shade of red.</p>
                 <p><b>Fire Resistance:</b> You have resistance to fire damage.</p>
                 <p><b>Reach to the Blaze:</b> You know the 
-                <div class="tooltip">&nbsp;produce flame
-                    <span class="tooltiptext">A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again. Can also be thrown to cause damage.</span>
+                <div class="tooltip_spell">&nbsp;produce flame
+                    <span class="tooltipspelltext"><ProduceFlame/></span>
                 </div> 
                 <div class="tooltip">&nbsp;cantrip
-                    <span class="tooltiptext">A cantrip is a spell that can be cast at will, without using a spell slot and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip's spell level is 0.</span>
+                    <span class="tooltiptext"><Cantrip/></span>
                 </div> 
                 . When you reach 3rd level, you can cast
-                <div class="tooltip">&nbsp;burning hands&nbsp;
-                    <span class="tooltiptext">As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.</span>
+                <div class="tooltip_spell">&nbsp;burning hands&nbsp;
+                    <span class="tooltipspelltext"><BurningHands/></span>
                 </div> 
                 as a 1st-level spell once with this trait, and you regain the ability to cast it this way when you finish a 
                 <div class="tooltip">&nbsp;long&nbsp;
-                    <span class="tooltiptext">A long rest is 8 hours of sleep. You regain all health and spells.</span>
+                    <span class="tooltiptext"><LongRest/></span>
                 </div> 
                 rest.
                 <div class="tooltip">&nbsp;Constitution&nbsp;
@@ -171,33 +177,29 @@ function GenasiRace() {
                 <p><b>Amphibious:</b> You can breathe air and water.</p>
                 <p><b>Swim:</b> You have a swimming speed of 30 feet.</p>
                 <p><b>Call to the Wave:</b> You know the 
-                <div class="tooltip">&nbsp;shape water
-                    <span class="tooltiptext">You manipulate an area of water that you can see within range that fits within a 5 foot cube. </span>
+                <div class="tooltip_spell">&nbsp;shape water
+                    <span class="tooltipspelltext"><ShapeWater/></span>
                 </div> 
                 <div class="tooltip">&nbsp;cantrip
-                    <span class="tooltiptext">A cantrip is a spell that can be cast at will, without using a spell slot and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip's spell level is 0.</span>
+                    <span class="tooltiptext"><Cantrip/></span>
                 </div> 
                 . When you reach 3rd level, you can cast
-                <div class="tooltip">&nbsp;create or destroy water&nbsp;
-                    <span class="tooltiptext">You can create or destroy up to 10 gallons of water.</span>
+                <div class="tooltip_spell">&nbsp;create or destroy water&nbsp;
+                    <span class="tooltipspelltext"><CreateOrDestroyWater/></span>
                 </div> 
                 as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a 
                 <div class="tooltip">&nbsp;long&nbsp;
-                    <span class="tooltiptext">A long rest is 8 hours of sleep. You regain all health and spells.</span>
+                    <span class="tooltiptext"><LongRest/></span>
                 </div> 
                 rest.
                 <div class="tooltip">&nbsp;Constitution&nbsp;
                     <span class="tooltiptext"><Constitution/></span>
                 </div>
                 is the spellcasting ability for this spell.</p>
-            
             </div>}
 
         </div>
     )        
-
-
 }
-
 
 export default GenasiRace;

@@ -1,6 +1,7 @@
 import React from 'react'
 import Picture from '../pics/tabaxi.png'
 import {Charisma, Dexterity} from '../keywords/AbilityScores';
+import { OneD4, Proficiency, Speed, StrengthModifier } from '../keywords/Words';
 
 function TabaxiRace() {
     return (
@@ -27,32 +28,29 @@ function TabaxiRace() {
             <p><b>Size:</b> Tabaxi are taller on average than humans and are relatively slender. Your size is Medium.</p>
             <p><b>Speed:</b> Your base walking speed is 
             <div class="tooltip">&nbsp;30 feet.
-                <span class="tooltiptext">This is how far you can move in a single round of combat without using a dash action.</span>
+                <span class="tooltiptext"><Speed/></span>
             </div>
             </p>
             <p><b>Darkvision:</b> You have superior vision in the dark and dim conditions.  You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.  You can't discern color in darkness, only shades of gray.</p>
             <p><b>Feline Agility:</b> Your reflexes and agility allow you to move with a burst of speed.  When you move on your turn in combat, you can double your speed until the end of your turn. Once you use this trait, you can't use it again until you move 0 feet on one of your subsequent turns.</p>
             <p><b>Cat's Claws:</b>Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 
             <div class="tooltip">&nbsp;1d4&nbsp;
-                <span class="tooltiptext">Roll one 4 sided die.</span>
+                <span class="tooltiptext"><OneD4/></span>
             </div>
             + your 
             <div class="tooltip">&nbsp;Strength modifier
-                <span class="tooltiptext">Based on your Strength ability score. A score of 10 has a modifier of 0, with the modifier increasing or decreasing with every two point increase or decrease from 10 in your ability score.  Strength score of 14 has a +2 modified, score of 8 has a -1 modifier.</span>
+                <span class="tooltiptext"><StrengthModifier/></span>
             </div>
             , instead of the bludgeoning damage normal for unarmed strikes.</p>
             <p><b>Cat's Talent:</b>You have  
             <div class="tooltip">&nbsp;proficiency&nbsp;
-                <span class="tooltiptext">A bonus that you can add to a roll to increase your chance of success, due to your "proficiency" in the skill.</span>
+                <span class="tooltiptext"><Proficiency/></span>
             </div>  
             in the Perception and Stealth skills.</p>
             <p><b>Languages:</b>You can speak, read, and write Common and one other language of your choice.</p>
         
         </div>
     )        
-
-
 }
-
 
 export default TabaxiRace;

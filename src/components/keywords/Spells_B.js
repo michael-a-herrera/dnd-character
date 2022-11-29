@@ -39,9 +39,215 @@ function DisplaySpell(input_spell) {
         </div> 
     )
 }
-
-
-function placeholderb() {
+function Bane() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Banishment() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Barkskin() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function BeaconOfHope() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function BestowCurse() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function BlackTentacles() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function BladeBarrier() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Bless() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Blight() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function BlindnessDeafness() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Blink() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Blur() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function BrandingSmite() {
+    const spell = {
+        name: " ", 
+        type: " ",
+        casting_time: " ",
+        range: " ",
+        target: " ",
+        components: " ",
+        duration: " ",
+        classes: " ",
+        description: ["", <br />,""],
+        high_level: "false",
+        high_des: " NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function BurningHands() {
     const spell = {
         name: " ", 
         type: " ",
@@ -59,5 +265,20 @@ function placeholderb() {
 }
 
 
-export {placeholderb};
+export {
+    Bane,
+    Banishment,
+    Barkskin,
+    BeaconOfHope,
+    BestowCurse,
+    BlackTentacles,
+    BladeBarrier,
+    Bless,
+    Blight,
+    BlindnessDeafness,
+    Blink,
+    Blur,
+    BrandingSmite,
+    BurningHands
+};
 

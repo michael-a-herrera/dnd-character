@@ -41,7 +41,7 @@ function DisplaySpell(input_spell) {
 }
 
 
-function placeholdern() {
+function Nondetection() {
     const spell = {
         name: " ", 
         type: " ",
@@ -59,5 +59,5 @@ function placeholdern() {
 }
 
 
-export {placeholdern};
+export {Nondetection};
 

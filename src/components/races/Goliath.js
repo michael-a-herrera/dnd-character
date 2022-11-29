@@ -1,6 +1,7 @@
 import React from 'react'
 import Picture from '../pics/goliath.png'
 import {Constitution, Strength} from '../keywords/AbilityScores';
+import { D12, LongRest, Proficiency, Reaction, ShortRest, Speed } from '../keywords/Words';
 
 function GoliathRace() {
     return (
@@ -23,21 +24,21 @@ function GoliathRace() {
             <p><b>Size:</b> Goliaths stand between 7 and 8 feet tall and weight between 280 and 340 pounds. Your size is Medium.</p>
             <p><b>Speed:</b> Your base walking speed is 
             <div class="tooltip">&nbsp;30 feet.
-                <span class="tooltiptext">This is how far you can move in a single round of combat without using a dash action.</span>
+                <span class="tooltiptext"><Speed/></span>
             </div>
             </p>
             <p><b>Natural Athlete:</b> You have 
             <div class="tooltip">&nbsp;proficiency&nbsp;
-                <span class="tooltiptext">A bonus that you can add to a roll to increase your chance of success, due to your "proficiency" in the skill.</span>
+                <span class="tooltiptext"><Proficiency/></span>
             </div>  
             in the Athletics skill.</p>
             <p><b>Stone's Endurance:</b> You can focus yourself to occasionally shrug off injury. When you take damage, you can use your
             <div class="tooltip">&nbsp;reaction&nbsp;
-                <span class="tooltiptext">During combat, once on or between your turns, you may use a reaction to use a reaction trait or cast a reaction spell.</span>
+                <span class="tooltiptext"><Reaction/></span>
             </div>  
             to roll a 
             <div class="tooltip">&nbsp;d12
-                <span class="tooltiptext">A 12 sided die.</span>
+                <span class="tooltiptext"><D12/></span>
             </div>
             . Add your 
             <div class="tooltip">&nbsp;Constitution&nbsp;
@@ -45,11 +46,11 @@ function GoliathRace() {
             </div>
             modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can't use it again until you finish a 
             <div class="tooltip">&nbsp;short&nbsp;
-                <span class="tooltiptext">A short rest is 1 hour. You can regain some health if damaged, possibly regain some spells depending on race and class.</span>
+                <span class="tooltiptext"><ShortRest/></span>
             </div> 
             or 
             <div class="tooltip">&nbsp;long&nbsp;
-                <span class="tooltiptext">A long rest is 8 hours of sleep. You regain all health and spells.</span>
+                <span class="tooltiptext"><LongRest/></span>
             </div> 
             rest.</p>
             <p><b>Powerful Build:</b>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>

@@ -41,7 +41,7 @@ function DisplaySpell(input_spell) {
 }
 
 
-function placeholderj() {
+function Jump() {
     const spell = {
         name: " ", 
         type: " ",
@@ -59,5 +59,5 @@ function placeholderj() {
 }
 
 
-export {placeholderj};
+export {Jump};
 

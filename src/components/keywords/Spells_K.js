@@ -41,7 +41,7 @@ function DisplaySpell(input_spell) {
 }
 
 
-function placeholderk() {
+function Knock() {
     const spell = {
         name: " ", 
         type: " ",
@@ -59,5 +59,5 @@ function placeholderk() {
 }
 
 
-export {placeholderk};
+export {Knock};
 

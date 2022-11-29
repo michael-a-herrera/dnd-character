@@ -41,7 +41,7 @@ function DisplaySpell(input_spell) {
 }
 
 
-function placeholderz() {
+function ZoneOfTruth() {
     const spell = {
         name: " ", 
         type: " ",
@@ -59,5 +59,5 @@ function placeholderz() {
 }
 
 
-export {placeholderz};
+export {ZoneOfTruth};
 

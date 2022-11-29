@@ -41,7 +41,7 @@ function DisplaySpell(input_spell) {
 }
 
 
-function placeholdery() {
+function nospellhere_y() {
     const spell = {
         name: " ", 
         type: " ",
@@ -59,5 +59,5 @@ function placeholdery() {
 }
 
 
-export {placeholdery};
+export {nospellhere_y};
 

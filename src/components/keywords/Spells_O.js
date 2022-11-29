@@ -41,7 +41,7 @@ function DisplaySpell(input_spell) {
 }
 
 
-function placeholdero() {
+function nospellshereo() {
     const spell = {
         name: " ", 
         type: " ",
@@ -59,5 +59,5 @@ function placeholdero() {
 }
 
 
-export {placeholdero};
+export {nospellshereo};
 

@@ -13,7 +13,6 @@ import FirbolgRace from '../components/races/Firbolg';
 import GenasiRace from '../components/races/Genasi';
 import GoliathRace from '../components/races/Goliath';
 import TabaxiRace from '../components/races/Tabaxi';
-
 import {useState} from 'react';
 
 function RaceSelectPage() {
@@ -35,7 +34,6 @@ function RaceSelectPage() {
         { class:"buttonrace", label: "Tabaxi", value: false }
 
     ]);
-   
 
     const handleButtonsChange = ({
         buttons,
@@ -90,8 +88,6 @@ function RaceSelectPage() {
         {buttons[11].value && <div><GenasiRace /></div>}
         {buttons[12].value && <div><GoliathRace /></div>}
         {buttons[13].value && <div><TabaxiRace /></div>}
-
-
 
         </div>;
 }

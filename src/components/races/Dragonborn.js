@@ -2,7 +2,7 @@ import React from 'react'
 import Picture from '../pics/dragonborn.png'
 import {useState} from 'react';
 import {Charisma,Constitution, Intelligence, Strength} from '../keywords/AbilityScores';
-
+import { Advantage, ConstitutionModifier, DifficultyClass, LongRest, Proficiency, Reaction, ShortRest, Speed, TwoD6 } from '../keywords/Words';
 
 const data = [
     { dragon: "Black", damage: "Acid", weapon: "5 by 30 ft. line (Dex save)" },
@@ -18,8 +18,6 @@ const data = [
 
   ]
 
-
-  
 function DragonbornRace() {
 
     const [buttons, setButtons] = useState([
@@ -65,7 +63,6 @@ function DragonbornRace() {
 
     return (
         <div>
-
             <p>Shaped by draconic gods or the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. The ravenite dragonkin established a city-state, Draconia, over 1000 years ago in Wildemount. Almost 1000 years ago, during a worldwide apocalyptic event called The Calamity, a colonizing group of dragonkin known as the draconblood came to Draconia and over time enslaved the ravenite. Twenty years ago, Draconia was destroyed by a group of ancient dragons called the Chroma Conclave.  The ravenites rose up in the ashes of the city and overthrew their masters and now work to rebuild their civilization.</p>
             <h2>Dragonborn Traits</h2>
             <img className="raceImg" src={Picture} alt="Dragonborn"/>
@@ -81,7 +78,7 @@ function DragonbornRace() {
             <p><b>Size:</b> Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium.</p>
             <p><b>Speed:</b> Your base walking speed is 
             <div class="tooltip">&nbsp;30 feet.
-                <span class="tooltiptext">This is how far you can move in a single round of combat without using a dash action.</span>
+                <span class="tooltiptext"><Speed/></span>
             </div>
             </p>
             <p><b>Draconic Ancestry:</b> You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.</p>
@@ -103,27 +100,27 @@ function DragonbornRace() {
             </table>
             <p><b>Dragon Breath:</b> You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The 
             <div class="tooltip">&nbsp;DC&nbsp;
-                <span class="tooltiptext">Difficulty Class. The number you are trying to meet or beat to succeed at a skill check or saving throw.</span>
+                <span class="tooltiptext"><DifficultyClass/></span>
             </div>
             for this saving throw equals 8 + your 
             <div class="tooltip">&nbsp;Constitution modifier&nbsp;
-                <span class="tooltiptext">Based on your Constitution ability score. A score of 10 has a modifier of 0, with the modifier increasing or decreasing with every two point increase or decrease from 10 in your ability score.  Constitution score of 14 has a +2 modified, score of 8 has a -1 modifier.</span>
+                <span class="tooltiptext"><ConstitutionModifier/></span>
             </div>
              + your 
              <div class="tooltip">&nbsp;proficiency&nbsp;
-                <span class="tooltiptext">A bonus that you can add to a roll to increase your chance of success, due to your "proficiency" in the skill.</span>
+                <span class="tooltiptext"><Proficiency/></span>
             </div>  
             bonus. A creature takes 
             <div class="tooltip">&nbsp;2d6&nbsp;
-                <span class="tooltiptext">Roll 2 six sided dice, and add them together.</span>
+                <span class="tooltiptext"><TwoD6/></span>
             </div> 
             damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can't use it again until you complete a 
             <div class="tooltip">&nbsp;short&nbsp;
-                <span class="tooltiptext">A short rest is 1 hour. You can regain some health if damaged, possibly regain some spells depending on race and class.</span>
+                <span class="tooltiptext"><ShortRest/></span>
             </div> 
             or 
             <div class="tooltip">&nbsp;long&nbsp;
-                <span class="tooltiptext">A long rest is 8 hours of sleep. You regain all health and spells.</span>
+                <span class="tooltiptext"><LongRest/></span>
             </div> 
             rest.</p>
             <p><b>Damage Resistance:</b> You have resistance to the damage type associated with your draconic ancestry.</p>
@@ -143,15 +140,15 @@ function DragonbornRace() {
                 <p><b>Darkvision:</b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.  You can't discern color in darkness, only shades of gray.</p>
                 <p><b>Foreceful Presence:</b> You can use your understanding of creative diplomacy or intimidation to guide a conversation in your favor.  When you make a Intimidation or Persuasion check, you can do so with
                 <div class="tooltip">&nbsp;advantage
-                    <span class="tooltiptext">Advantage means you can make a roll twice and take the higher of the two rolls, increasing your chance for success or a critical roll.</span>
+                    <span class="tooltiptext"><Advantage/></span>
                 </div>
                 . Once you use this trait, you can't do so again until you finish a 
                 <div class="tooltip">&nbsp;short&nbsp;
-                    <span class="tooltiptext">A short rest is 1 hour. You can regain some health if damaged, possibly regain some spells depending on race and class.</span>
+                    <span class="tooltiptext"><ShortRest/></span>
                 </div> 
                 or 
                 <div class="tooltip">&nbsp;long&nbsp;
-                    <span class="tooltiptext">A long rest is 8 hours of sleep. You regain all health and spells.</span>
+                    <span class="tooltiptext"><LongRest/></span>
                 </div> 
                 rest.</p>
             </div>}
@@ -170,24 +167,21 @@ function DragonbornRace() {
                 <p><b>Darkvision:</b> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.  You can't discern color in darkness, only shades of gray.</p>
                 <p><b>Vengeful Assault:</b> When you take damage from a creature in range of a weapon you are weilding, you can use your 
                 <div class="tooltip">&nbsp;reaction&nbsp;
-                    <span class="tooltiptext">During combat, once on or between your turns, you may use a reaction to use a reaction trait or cast a reaction spell.</span>
+                    <span class="tooltiptext"><Reaction/></span>
                 </div>  
                 to make an attack with the weapon against the creature. Once you use this trait, you can't do so again until you finish a 
                 <div class="tooltip">&nbsp;short&nbsp;
-                    <span class="tooltiptext">A short rest is 1 hour. You can regain some health if damaged, possibly regain some spells depending on race and class.</span>
+                    <span class="tooltiptext"><ShortRest/></span>
                 </div> 
                 or 
                 <div class="tooltip">&nbsp;long&nbsp;
-                    <span class="tooltiptext">A long rest is 8 hours of sleep. You regain all health and spells.</span>
+                    <span class="tooltiptext"><LongRest/></span>
                 </div> 
                 rest.</p>
             </div>}
 
         </div>
     )        
-
-
 }
-
 
 export default DragonbornRace;

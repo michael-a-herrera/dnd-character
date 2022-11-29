@@ -2,6 +2,10 @@ import React from 'react'
 import Picture from '../pics/halfling.png'
 import {useState} from 'react';
 import {Charisma, Constitution, Dexterity, Wisdom} from '../keywords/AbilityScores';
+import { Advantage, Cantrip, D20, LongRest, Speed } from '../keywords/Words';
+import { Druidcraft } from '../keywords/Spells_D';
+import { Entangle } from '../keywords/Spells_E';
+import { SpikeGrowth } from '../keywords/Spells_S';
 
 function HalflingRace() {
 
@@ -60,7 +64,6 @@ function HalflingRace() {
             {buttons[1].value && <div><p>As a stout halfling, you're hardier than average and have some resistance to poison. Some say stouts have dwarven blood.</p></div>}
             {buttons[2].value && <div><p>Long tied to the n atural heart of the Lotusden Greenwood, these halflings have adapted to live synergistically with the chaotic laws of the wild.</p></div>}
 
-
             <p><b>Ability Score Increase:</b> Your 
             <div class="tooltip">&nbsp;Dexterity&nbsp;
                 <span class="tooltiptext"><Dexterity/></span>
@@ -70,17 +73,17 @@ function HalflingRace() {
             <p><b>Size:</b> Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small.</p>
             <p><b>Speed:</b> Your base walking speed is 
             <div class="tooltip">&nbsp;25 feet.
-                <span class="tooltiptext">This is how far you can move in a single round of combat without using a dash action.</span>
+                <span class="tooltiptext"><Speed/></span>
             </div>
             </p>
             <p><b>Lucky:</b> When you roll a 1 on the 
             <div class="tooltip">&nbsp;d20&nbsp;
-                <span class="tooltiptext">20 sided die, the main die used in D&D.</span>
+                <span class="tooltiptext"><D20/></span>
             </div>     
             for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.</p>
             <p><b>Brave:</b> You have 
             <div class="tooltip">&nbsp;advantage&nbsp;
-                <span class="tooltiptext">Advantage means you can make a roll twice and take the higher of the two rolls, increasing your chance for success or a critical roll.</span>
+                <span class="tooltiptext"><Advantage/></span>
             </div>            
             on saving throws against being frightened.</p>
             <p><b>Halfling Nimbleness:</b>You can move through the space of any creature that is of a size larger than yours.</p>
@@ -105,7 +108,7 @@ function HalflingRace() {
                 score increases by 1.</p>
                 <p><b>Stout Resilience:</b> You have  
                 <div class="tooltip">&nbsp;advantage&nbsp;
-                    <span class="tooltiptext">Advantage means you can make a roll twice and take the higher of the two rolls, increasing your chance for success or a critical roll.</span>
+                    <span class="tooltiptext"><Advantage/></span>
                 </div>        
                 on saving throws against poison, and you have resistance against poison damage.</p>
             </div>}
@@ -118,23 +121,23 @@ function HalflingRace() {
                 </div>
                 score increases by 1.</p>
                 <p><b>Child of the Wood:</b> You know the 
-                <div class="tooltip">&nbsp;druidcraft
-                    <span class="tooltiptext">This cantrip has several possible effects, see character summary for more info. You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. </span>
+                <div class="tooltip_spell">&nbsp;druidcraft
+                    <span class="tooltipspelltext"><Druidcraft/></span>
                 </div> 
                 <div class="tooltip">&nbsp;cantrip
-                    <span class="tooltiptext">A cantrip is a spell that can be cast at will, without using a spell slot and without being prepared in advance. Repeated practice has fixed the spell in the caster's mind and infused the caster with the magic needed to produce the effect over and over. A cantrip's spell level is 0.</span>
+                    <span class="tooltiptext"><Cantrip/></span>
                 </div> 
                 . When you reach 3rd level, you can cast the 
-                <div class="tooltip">&nbsp;entangle&nbsp;
-                    <span class="tooltiptext">Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain, with the possibility of restraining anyone in the area.</span>
+                <div class="tooltip_spell">&nbsp;entangle&nbsp;
+                    <span class="tooltipspelltext"><Entangle/></span>
                 </div> 
                 spell once with this trait. When you reach 5th level, you can cast the 
-                <div class="tooltip">&nbsp;spike growth&nbsp;
-                    <span class="tooltiptext">The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels.</span>
+                <div class="tooltip_spell">&nbsp;spike growth&nbsp;
+                    <span class="tooltipspelltext"><SpikeGrowth/></span>
                 </div> 
                 spell once with this trait. You regain the ability to cast these spells (cantrips can be used as many times as you want) when you finish a  
                 <div class="tooltip">&nbsp;long&nbsp;
-                    <span class="tooltiptext">A long rest is 8 hours of sleep. You regain all health and spells.</span>
+                    <span class="tooltiptext"><LongRest/></span>
                 </div> 
                 rest. 
                 <div class="tooltip">&nbsp;Wisdom&nbsp;
@@ -145,9 +148,6 @@ function HalflingRace() {
 
         </div>
     )        
-
-
 }
-
 
 export default HalflingRace;
