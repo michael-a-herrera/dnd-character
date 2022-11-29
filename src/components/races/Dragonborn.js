@@ -50,7 +50,7 @@ function DragonbornRace() {
         return (
             <>
                 {buttons.map((button,index) => (
-                    <button class={`${button.class}`}
+                    <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
                         onClick={() =>
                             handleButtonsChange({ buttons, setButtons })(button.label)
@@ -68,7 +68,7 @@ function DragonbornRace() {
 
             <p>Shaped by draconic gods or the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. The ravenite dragonkin established a city-state, Draconia, over 1000 years ago in Wildemount. Almost 1000 years ago, during a worldwide apocalyptic event called The Calamity, a colonizing group of dragonkin known as the draconblood came to Draconia and over time enslaved the ravenite. Twenty years ago, Draconia was destroyed by a group of ancient dragons called the Chroma Conclave.  The ravenites rose up in the ashes of the city and overthrew their masters and now work to rebuild their civilization.</p>
             <h2>Dragonborn Traits</h2>
-            <img class="raceImg" src={Picture} alt="Dragonborn"/>
+            <img className="raceImg" src={Picture} alt="Dragonborn"/>
 
             <p>Your draconic heritage manifests in a variety of traits you share with other dragonborn.</p>
             

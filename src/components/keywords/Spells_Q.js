@@ -59,5 +59,5 @@ function placeholderq() {
 }
 
 
-export {Light,Invisibility,Sleep,FaerieFire,DancingLights,Darkness};
+export {placeholderq};
 

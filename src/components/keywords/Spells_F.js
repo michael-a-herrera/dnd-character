@@ -42,7 +42,7 @@ function DisplaySpell(input_spell) {
 
 function FaerieFire() {
     const spell = {
-        name: " FaerieFire", 
+        name: " Faerie Fire", 
         type: " 1st level evocation",
         casting_time: " 1 action",
         range: " 60 feet",
@@ -56,22 +56,7 @@ function FaerieFire() {
     return (DisplaySpell(spell))        
 }
 
-function placeholderf() {
-    const spell = {
-        name: " ", 
-        type: " ",
-        casting_time: " ",
-        range: " ",
-        target: " ",
-        components: " ",
-        duration: " ",
-        classes: " ",
-        description: ["", <br />,""],
-        high_level: "false",
-        high_des: " NA"
-    }
-    return (DisplaySpell(spell))        
-}
+
 
 
 export {FaerieFire};

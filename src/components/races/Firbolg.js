@@ -7,7 +7,7 @@ function FirbolgRace() {
         <div>
         <p>Firbolgs are a forest dwelling race whose bodies are covered with thick fur ranging from tones of earthen brown and ruddy red to cool grays and blues, and even to wild hues of pink and green.  Most firbolgs live in extended family units and it's unusual to find one living alone. However, they are introverted to the point where they seldom engage with other firbolgs outside the family unit. Many firbolgs still enjoy visiting other nations' settlements for a short time for trade, sightseeing, and to visit friends.</p>
         <h2>Firbolg Traits</h2>
-        <img class="raceImg" src={Picture} alt="Firbolg"/>
+        <img className="raceImg" src={Picture} alt="Firbolg"/>
 
             <p>A Firbolg character had the following racial traits.</p>
             <p><b>Ability Score Increase:</b> Your 

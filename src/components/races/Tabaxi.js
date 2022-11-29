@@ -11,7 +11,7 @@ function TabaxiRace() {
         </div>  
         . Many are taken with a love of wordplay and debate, often engaging travelers in philosophical conversations meant to challenge the intellect and to subtly guage the disposition of strangers.</p>
         <h2>Tabaxi Traits</h2>
-        <img class="raceImg" src={Picture} alt="Tabaxi"/>
+        <img className="raceImg" src={Picture} alt="Tabaxi"/>
 
             <p>Tabaxi share a number of traits in common with each other.</p>
             <p><b>Ability Score Increase:</b> Your 

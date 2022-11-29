@@ -34,7 +34,7 @@ function GenasiRace() {
         return (
             <>
                 {buttons.map((button,index) => (
-                    <button class={`${button.class}`}
+                    <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
                         onClick={() =>
                             handleButtonsChange({ buttons, setButtons })(button.label)
@@ -51,7 +51,7 @@ function GenasiRace() {
         <div>
         <p>Genasi are exceedingly rare as befits their unique origins.  They are often created as the result of a powerful elemental influence at the moment of their birth. A baby born within the eye of a hurricane might become an air genasi, while a fire genasi might be born in the midst of a raging forest fire.</p>
         <h2>Genasi Traits</h2>
-        <img class="raceImg2" src={Picture} alt="Genasi"/>
+        <img className="raceImg2" src={Picture} alt="Genasi"/>
 
             <p>A genasi character has the following racial traits. Choose a subrace for additional benefits.</p>
 

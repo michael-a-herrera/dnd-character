@@ -2,49 +2,49 @@ import React from 'react'
 
 function Wisdom() {
     return (
-        <div>
+        <span>
             Measures awareness, intuition, and insight. Important for Clerics, Druids, and some Rangers as it is the main score used in their spellcasting. Contributes to Animal Handling, Insight, Medicine, Perception, and Survival skills.
-        </div>
+        </span>
         )        
 }
 
 function Constitution() {
     return (
-        <div>
+        <span>
             Measures health, stamina, and vital force. Important for everyone, contributes to your health points.
-        </div>
+        </span>
         )        
 }
 
 function Strength() {
     return (
-        <div>
+        <span>
             Measures bodily power, athletic training, and the extent you can extert raw physical power. Important for Barbarians, Fighters, and Paladins. Contributes to Athletics checks and damage with melee weapons.       
-        </div>
+        </span>
         )        
 }
 
 function Dexterity() {
     return (
-        <div>
+        <span>
             Measures agility, reflexes, and balance.  Important for Monks, Rangers, and Rogues.  Affects the Acrobatics, Sleight of Hand, and Stealth skills, as well as contributing to your armor class and initiative.
-        </div>
+        </span>
         )        
 }
 
 function Intelligence() {
     return (
-        <div>
+        <span>
             Measures mental acuity, information recall, and analytical skill. Important for Wizards as it is the main score used in their spellcasting. Contributes to Arcana, History, Investigation, Nature, and Religion skills.
-        </div>
+        </span>
         )        
 }
 
 function Charisma() {
     return (
-        <div>
+        <span>
             Measures you ability to interact effectively with others. Important for Bards, Sorcerers, and Warlocks. Contributes to Deception, Intimidation, Performance, and Persuasion skills.
-        </div>
+        </span>
         )        
 }
 

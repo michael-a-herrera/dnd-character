@@ -33,7 +33,7 @@ function GnomeRace() {
         return (
             <>
                 {buttons.map((button,index) => (
-                    <button class={`${button.class}`}
+                    <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
                         onClick={() =>
                             handleButtonsChange({ buttons, setButtons })(button.label)
@@ -50,7 +50,7 @@ function GnomeRace() {
         <div>
             <p>A constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their close-knit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play.</p>
             <h2>Gnome Traits</h2>
-            <img class="raceImg" src={Picture} alt="Gnome"/>
+            <img className="raceImg" src={Picture} alt="Gnome"/>
 
             <p>Your gnome character has certain characteristics in common with all other gnomes.</p>
 

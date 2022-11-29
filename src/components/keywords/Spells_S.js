@@ -57,22 +57,6 @@ function Sleep() {
     return (DisplaySpell(spell))        
 }
 
-function placeholders() {
-    const spell = {
-        name: " ", 
-        type: " ",
-        casting_time: " ",
-        range: " ",
-        target: " ",
-        components: " ",
-        duration: " ",
-        classes: " ",
-        description: ["", <br />,""],
-        high_level: "false",
-        high_des: " NA"
-    }
-    return (DisplaySpell(spell))        
-}
 
 
 export {Sleep};

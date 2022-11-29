@@ -322,19 +322,60 @@ function ArcanistsMagicAura() {
     }
     return (DisplaySpell(spell))        
 }
-
-
-function placeholder21() {
+function AstralProjection() {
     const spell = {
-        name: " Light", 
-        type: " cantrip evocation",
-        casting_time: " 1 action",
+        name: " Astral Projection", 
+        type: " 9th level necromancy",
+        casting_time: " 1 hour",
+        range: " 10 feet",
+        target: " You and up to eight willing creatures within range",
+        components: "  V S M (For each creature you affect with this spell, you must provide one jacinth worth at least 1,000 gp and one ornately carved bar of silver worth at least 100 gp, all of which the spell consumes)",
+        duration: " Special",
+        classes: " Cleric, Warlock, Wizard",
+        description: [" You and up to eight willing creatures within range project your astral bodies into the Astral Plane (the spell fails and the casting is wasted if you are already on that plane). The material body you leave behind is unconscious and in a state of suspended animation; it doesn’t need food or air and doesn’t age."
+        ,<br />,"Your astral body resembles your mortal form in almost every way, replicating your game statistics and possessions. The principal difference is the addition of a silvery cord that extends from between your shoulder blades and trails behind you, fading to invisibility after 1 foot. This cord is your tether to your material body. As long as the tether remains intact, you can find your way home. If the cord is cut—something that can happen only when an effect specifically states that it does—your soul and body are separated, killing you instantly."
+        ,<br />,"Your astral form can freely travel through the Astral Plane and can pass through portals there leading to any other plane. If you enter a new plane or return to the plane you were on when casting this spell, your body and possessions are transported along the silver cord, allowing you to re-enter your body as you enter the new plane. Your astral form is a separate incarnation. Any damage or other effects that apply to it have no effect on your physical body, nor do they persist when you return to it."
+        ,<br />,"The spell ends for you and your companions when you use your action to dismiss it. When the spell ends, the affected creature returns to its physical body, and it awakens."
+        ,<br />, "The spell might also end early for you or one of your companions. A successful dispel magic spell used against an astral or physical body ends the spell for that creature. If a creature’s original body or its astral form drops to 0 hit points, the spell ends for that creature. If the spell ends and the silver cord is intact, the cord pulls the creature’s astral form back to its body, ending its state of suspended animation."
+        ,<br />,"If you are returned to your body prematurely, your companions remain in their astral forms and must find their own way back to their bodies, usually by dropping to 0 hit points."],
+        high_level: "false",
+        high_des: "NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Augury() {
+    const spell = {
+        name: " Augury", 
+        type: " 2nd level divination (ritual)",
+        casting_time: " 1 minute",
+        range: " Self",
+        target: " See text",
+        components: " V S M (Specially marked sticks, bones, or similar tokens worth at least 25 gp)",
+        duration: " Instantaneous",
+        classes: " Cleric",
+        description: [" By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The GM chooses from the following possible omens:"
+        , <br />,"Weal, for good results"
+        , <br />,"Woe, for bad results"
+        , <br />,"Weal and woe, for both good and bad results"
+        , <br />,"Nothing, for results that aren’t especially good or bad"
+        , <br />,"The spell doesn’t take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion."
+        , <br />,"If you cast the spell two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The GM makes this roll in secret."],
+        high_level: "false",
+        high_des: "NA"
+    }
+    return (DisplaySpell(spell))        
+}
+function Awaken() {
+    const spell = {
+        name: " Awaken", 
+        type: " 5th level transmutation",
+        casting_time: " 8 hours",
         range: " Touch",
-        target: " One object that is no larger than 10 feet in any dimension",
-        components: " V M (a firefly or phosphorescent moss)",
-        duration: " 1 hour",
-        classes: " Bard, Cleric, Sorcerer, Wizard",
-        description: ["", <br />,""],
+        target: " A Huge or smaller beast or plant with either no Intelligence score or an Intelligence of 3 or less",
+        components: " V S M (An agate worth at least 1,000 gp, which the spell consumes)",
+        duration: " Instantaneous",
+        classes: " Bard, Druid",
+        description: ["After spending the casting time tracing magical pathways within a precious gemstone, you touch a Huge or smaller beast or plant. The target must have either no Intelligence score or an Intelligence of 3 or less. The target gains an Intelligence of 10. The target also gains the ability to speak one language you know. If the target is a plant, it gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human’s. Your GM chooses statistics appropriate for the awakened plant, such as the statistics for the awakened shrub or the awakened tree.", <br />,"The awakened beast or plant is charmed by you for 30 days or until you or your companions do anything harmful to it. When the charmed condition ends, the awakened creature chooses whether to remain friendly to you, based on how you treated it while it was charmed."],
         high_level: "false",
         high_des: "NA"
     }
@@ -358,6 +399,9 @@ export {
     ArccaneHand,
     ArcaneLock,
     ArcaneSword,
-    ArcanistsMagicAura
+    ArcanistsMagicAura,
+    AstralProjection,
+    Augury,
+    Awaken
 }
 

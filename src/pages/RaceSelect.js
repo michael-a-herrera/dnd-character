@@ -59,7 +59,7 @@ function RaceSelectPage() {
         return (
             <>
                 {buttons.map((button,index) => (
-                    <button class={`${button.class}`}
+                    <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
                         onClick={() =>
                             handleButtonsChange({ buttons, setButtons })(button.label)

@@ -43,7 +43,7 @@ function ElfRace() {
         return (
             <>
                 {buttons.map((button,index) => (
-                    <button class={`${button.class}`}
+                    <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
                         onClick={() =>
                             handleButtonsChange({ buttons, setButtons })(button.label)
@@ -62,7 +62,7 @@ function ElfRace() {
             They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrencies on the breeze.
             Elves love nature and magic, art and artistry, music and poetry, and the good things of the world.</p>
             <h2>Elf Traits</h2>
-            <img class="raceImg" src={Picture} alt="Elf"/>
+            <img className="raceImg" src={Picture} alt="Elf"/>
 
             Your elf character has a variety of natural abilities, the result of thousands of years of elven refinement.
             

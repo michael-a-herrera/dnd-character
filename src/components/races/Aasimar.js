@@ -34,7 +34,7 @@ function AasimarRace() {
         return (
             <>
                 {buttons.map((button,index) => (
-                    <button class={`${button.class}`}
+                    <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
                         onClick={() =>
                             handleButtonsChange({ buttons, setButtons })(button.label)
@@ -51,7 +51,7 @@ function AasimarRace() {
         <div>
             <p>Aasimar are the purest expression of the divine light of the gods.  While that light burns in every mortal soul, the souls of those blessed with an angelic ancestor blaze brighter than any other and are understood to be destined for a grander cosmic purpose. In every culture across the world, the birth of an aasimar is seen as a blessing and a portent.  Aasimar who can bear the burden of destiny become champions of noble causes, and encourage others to walk always in the light. More often than not, however, an aasimar saddled with a vague destiny and the grand aspirations of their clan ultimately falls from grace, their inner light succumbing to shadow.</p>
             <h2>Aasimar Traits</h2>
-            <img class="raceImg" src={Picture} alt="Aasimar"/>
+            <img className="raceImg" src={Picture} alt="Aasimar"/>
 
             <p>An aasimar character has the following racial traits.</p>
 

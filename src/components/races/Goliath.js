@@ -7,7 +7,7 @@ function GoliathRace() {
         <div>
         <p>The goliaths are a mighty people with stone giant blood running through their veins.  Most stand well over 7 feet tall and are blessed with naturally powerful physique.  Goliaths tend to have a strong drive to compete and win, counting their deeds and tallying their accomplishments to compare to others. While they love to win, they see defeat as a prod to improve their skills. Few goliaths reach old age, as most die attempting to surpass thier past achievements. Among goliaths, any adult who can't or won't contribute to the clan is expelled.</p>
         <h2>Goliath Traits</h2>
-        <img class="raceImg" src={Picture} alt="Goliath"/>
+        <img className="raceImg" src={Picture} alt="Goliath"/>
 
             <p>Goliaths share a number of traits in common with each other.</p>
             <p><b>Ability Score Increase:</b> Your 

@@ -33,7 +33,7 @@ function DwarfRace() {
         return (
             <>
                 {buttons.map((button,index) => (
-                    <button class={`${button.class}`}
+                    <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
                         onClick={() =>
                             handleButtonsChange({ buttons, setButtons })(button.label)
@@ -51,7 +51,7 @@ function DwarfRace() {
         <div>
             <p>Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a burning hatred of goblins and orcs—these common threads unite all dwarves.</p>
             <h2>Dwarf Traits</h2>
-            <img class="raceImg" src={Picture} alt="Drawf"/>
+            <img className="raceImg" src={Picture} alt="Drawf"/>
             <p>Your dwarf character has an assortment of inborn abilities, part and parcel of dwarven nature.</p>
 
             <p> Choose a subrace for additional traits, appended at the bottom of the list:</p>

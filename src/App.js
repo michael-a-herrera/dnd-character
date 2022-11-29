@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div>
-      <img class="logoImg" src={logo} alt="Logo"/>
+      <img className="logoImg" src={logo} alt="Logo"/>
 
       <Routes>
         <Route path='/' element={<RaceSelectPage />} />

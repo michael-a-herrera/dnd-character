@@ -33,7 +33,7 @@ function HalflingRace() {
         return (
             <>
                 {buttons.map((button,index) => (
-                    <button class={`${button.class}`}
+                    <button className={`${button.class}`}
                         key={`${button.label}-${index}`}
                         onClick={() =>
                             handleButtonsChange({ buttons, setButtons })(button.label)
@@ -50,7 +50,7 @@ function HalflingRace() {
         <div>
             <p>The comforts of home are the goals of most halflings' lives: a place to settle in peace and quiet, far from marauding monsters and clashing armies; a blazing fire and a generous meal; fine drink and fine conversation. Though some halflings live out their days in remote agricultural communities, others form nomadic bands that travel constantly, lured by the open road and the wide horizon to discover the wonders of new lands and peoples. But even these wanderers love peace, food, hearth, and home, though home might be a wagon jostling along a dirt road or a raft floating downriver.</p>
             <h2>Halfling Traits</h2>
-            <img class="raceImg" src={Picture} alt="Halfling"/>
+            <img className="raceImg" src={Picture} alt="Halfling"/>
 
             <p>Your halfling character has a number of traits in common with all other halflings.</p>
 
