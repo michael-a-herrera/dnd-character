@@ -85,7 +85,7 @@ const ClassSelectPage = props => {
 
     return <div>
         <h1>Select Your Class</h1>
-        <p></p>
+        <p>Class is the primary definition of what your character can do. It's more than a profession; it's your character's calling. Class shapes the way you think about the world and interact with it and your relationship with other people and powers. For example, a cleric may see herself as a willing servant in a god's unfolding plan or a conflict brewing among various dieties. You class gives you a variety of special features, such as mastery over weapons or spells.</p>
         <Specialbuton {...{buttons,setButtons,handleButtonsChange}} />
         {buttons[0].value && <div><BarbarianClass /></div>}
         {buttons[1].value && <div><BardClass /></div>}

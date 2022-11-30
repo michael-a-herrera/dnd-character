@@ -373,3 +373,11 @@ td {
   display: inline-block;
   transition-duration: 0.4s;
 }
+
+.classtable {
+  width:100%;
+  font-size: 16px;
+  border-color: black;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
