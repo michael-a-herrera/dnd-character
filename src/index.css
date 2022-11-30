@@ -227,6 +227,44 @@ td {
   transition-duration: 0.4s;
 }
 
+.buttonclass {
+  background-color: #ffffff;
+  text-align: center;
+  width: 13%;
+  margin-right:2px;
+  margin-bottom: 2px;
+  font-size: 16px;
+  border-radius: 4px;
+  border-color: black;
+  padding: 10px;
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+
+.buttonclass:hover {
+  background-color: #236aec;
+  color: white;
+  border-color: rgb(0, 0, 0);
+}
+
+.buttonclass_clicked {
+  background-color: #236aec;
+  color: white;
+  text-align: center;
+  width: 13%;
+  margin-right:2px;
+  margin-bottom: 2px;
+  font-size: 16px;
+  border-radius: 4px;
+  border-color: rgb(0, 0, 0);
+  padding: 10px;
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+
+
+
+
 
 .buttonsubrace {
   background-color: #ffffff;
@@ -300,4 +338,38 @@ td {
   display: flex;
   align-items: end;
   flex-direction: column;
+}
+
+
+.buttonsubclass {
+  background-color: #ffffff;
+  text-align: center;
+  margin-right:2px;
+  margin-bottom: 2px;
+  font-size: 16px;
+  border-radius: 4px;
+  border-color: black;
+  padding: 8px;
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+
+.buttonsubcclass:hover {
+  background-color: #236aec;
+  color: white;
+  border-color: rgb(0, 0, 0);
+}
+
+.buttonsubclass_clicked {
+  background-color: #236aec;
+  color: white;
+  text-align: center;
+  margin-right:2px;
+  margin-bottom: 2px;
+  font-size: 16px;
+  border-radius: 4px;
+  border-color: rgb(0, 0, 0);
+  padding: 8px;
+  display: inline-block;
+  transition-duration: 0.4s;
 }
